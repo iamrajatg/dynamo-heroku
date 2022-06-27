@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "export AWS_ACCESS_KEY_ID=dunder; export AWS_SECRET_ACCESS_KEY=mifflin; aws configure set default.region local; aws configure set aws_access_key_id dunder; aws configure set aws_secret_access_key mifflin; cd DynamoDBLocal; ../jre/bin/java -Djava.library.path=./ -jar DynamoDBLocal.jar -port $PORT"
+    "start": " aws configure set default.region local; cd DynamoDBLocal; ../jre/bin/java -Djava.library.path=./ -jar DynamoDBLocal.jar -port $PORT -sharedDb"
   },
   "repository": {
     "type": "git",
