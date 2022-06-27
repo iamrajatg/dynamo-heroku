@@ -1,0 +1,19 @@
+{
+  "name": "dynamo-heroku",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "aws configure set default.region local; aws configure set aws_access_key_id dunder; aws configure set aws_secret_access_key mifflin; cd DynamoDBLocal; ../jre/bin/java -Djava.library.path=./ -jar DynamoDBLocal.jar -port $PORT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamrajatg/dynamo-heroku.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamrajatg/dynamo-heroku/issues"
+  },
+  "homepage": "https://github.com/iamrajatg/dynamo-heroku#readme"
+}
